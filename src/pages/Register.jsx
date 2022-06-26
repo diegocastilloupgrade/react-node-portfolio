@@ -1,10 +1,11 @@
 import React from "react";
 import RegisterForm from "../components/RegisterForm";
-
+import './Register.scss';
+import './Forms.scss';
 const Register = () => {
   return (
-    <div>
-      <h2>Register</h2>
+    <div className='form register'>
+      <h2>RegisterWork</h2>
       <RegisterForm />
     </div>
   );

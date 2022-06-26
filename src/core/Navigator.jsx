@@ -21,6 +21,9 @@ const Navigator = () => {
           <li>
             <Link to="/register">Registro</Link>
           </li>
+          <li>
+            <Link to="/newwork">Añadir trabajo</Link>
+          </li>
         </ul>
       </nav>
     </>

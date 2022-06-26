@@ -1,0 +1,35 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    border:solid 1px #eee;
+    width: 60%;
+    margin:0 auto;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2rem;
+    form {
+      width: 300px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      .email {
+        margin: 1rem 2rem;
+        width: 100%;
+        label {
+          min-width: 150px;
+          text-align: left;
+        }
+      }
+      .password {
+        margin: 1rem 2rem;
+        width: 100%;
+        label {
+          text-align: left;
+        }
+      }
+      button {
+        margin: 2rem;
+      }
+    }
+  }
+  

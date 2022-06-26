@@ -13,24 +13,29 @@ const WorksGallery = () => {
       console.log('worksDiego', worksDiego);
     };
     getWorksDiego();
-  },[]);
+  }, []);
   return (
-      <section className='worksGallery'>
-        <h2>Works Diego</h2>
+    <section className='worksGallery'>
+      <h2>Works Diego</h2>
+      <div className='worksContainer'>
         {worksDiego.map((workDiego) => (
-          <article>
+          <article className='workContainer'>
+          <img src={workDiego.picture} alt={workDiego.nombre_proyecto}/>
             <ul className='work'>
               <li>{workDiego._id}</li>
               <li>{workDiego.nombre_proyecto}</li>
               <li>{workDiego.descripcion_breve}</li>
               <li>{workDiego.descripcion_larga}</li>
             </ul>
-            <Link key={workDiego._id} to={`/works/${workDiego.nombre_proyecto}`}>
+            <Link
+              key={workDiego._id}
+              to={`/works/${workDiego.nombre_proyecto}`}>
               Ver detalle
             </Link>
           </article>
         ))}
-      </section>
+      </div>
+    </section>
   );
 };
 

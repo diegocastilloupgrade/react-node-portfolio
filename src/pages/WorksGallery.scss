@@ -1,9 +1,16 @@
 .worksGallery {
+  border: solid 1px black;
+  .worksContainer {
     display: flex;
-    border: solid 1px black;
-    .work {
-      border: solid 1px #ccc;
-      border-radius: .5rem;
+    max-width: 400px;
+    .workContainer {
+      border-radius: 0.5rem;
+      padding: 2rem;
+      box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+      border: solid 1px #eee;
+      .work{
+        
+      }
     }
   }
-  
+}

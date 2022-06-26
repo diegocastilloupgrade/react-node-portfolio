@@ -19,8 +19,8 @@ function App() {
           <Route path='/works' element={<WorksGallery />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
+          <Route path='/addwork' element={<NewWorkForm />} />
           <Route path='/works/:name' element={<WorkDetail />} />
-          <Route path='/newwork' element={<NewWorkForm />} />
         </Routes>
         <Footer />
       </div>
