@@ -1,13 +1,16 @@
-import React from "react";
-import NewWorkForm from "../components/NewWorkForm";
+import React from 'react';
+import AddWorkForm from '../components/AddWorkForm';
+import './Forms.scss';
 
-const Addwork = () => {
+const AddWork = () => {
   return (
-    <div className="addWork">
-      <h2>Register</h2>
-      <NewWorkForm />
+    <div className='pfContainer'>
+      <div className='form addWork'>
+        <h2>Añadir trabajo</h2>
+        <AddWorkForm />
+      </div>
     </div>
   );
 };
 
-export default Addwork;
+export default AddWork;

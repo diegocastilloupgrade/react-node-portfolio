@@ -1,9 +1,26 @@
 nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+  font-family: 'Cinzel', serif;
+  color: #AA7B58;
+  font-size: 1.2rem;
   ul {
+    padding: 0;
     display: flex;
     flex-direction: row;
     list-style: none;
-    li {margin: 0 2rem;
+    li {
+      margin: 0 2rem;
+      a {
+        text-decoration: none;
+        transition: width 2s;
+        color: inherit;
+        &:hover {
+        text-decoration: underline;
+        }
+      }
     }
   }
 }

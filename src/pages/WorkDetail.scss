@@ -1,0 +1,82 @@
+.workDetail {
+  width: 70%;
+  margin: 2rem auto;
+}
+.workDetailContainer {
+  display: flex;
+  flex-direction: row;
+  img {
+    width: 40%;
+  }
+  ul {
+    width: 60%;
+    list-style: none;
+    line-height: 2rem;
+  }
+  .nombre_proyecto h1 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+  .descripcion_breve {
+    color: #aaa;
+    font-style: italic;
+    font-size: 0.8em;
+  }
+  .company_data {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 1rem;
+      width: 50px;
+      border-radius: 25px;
+    }
+  }
+  .techContainer {
+    span {
+      font-size: 0.7em;
+      font-weight: bold;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      padding-inline-start: 0;
+      margin-top: 0;
+      li {
+        margin-right: 1rem;
+        padding: 0rem 1rem 0 2rem;
+        border: solid 1px #eaeaea;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        background-position: 8px 8px;
+        border-radius: 1rem;
+        font-size: 0.7em;
+        font-weight: bold;
+        &.Figma {
+          background-image: url('../assets/img/figma-1.svg');
+        }
+        &.Photoshop {
+          background-image: url('../assets/img/adobe-photoshop-2.svg');
+        }
+        &.Sketch {
+          background-image: url('../assets/img/Sketch_Logo.svg');
+        }
+        &.Invision {
+          background-image: url('../assets/img/invision.svg');
+        }
+        &.Marvel {
+          background-image: url('../assets/img/marvel-6.svg');
+        }
+        &.HTML {
+          background-image: url('../assets/img/html-1.svg');
+        }
+        &.CSS {
+          background-image: url('../assets/img/css-3.svg');
+        }
+        &.JS {
+          background-image: url('../assets/img/logo-javascript.svg');
+        }
+      }
+    }
+  }
+}

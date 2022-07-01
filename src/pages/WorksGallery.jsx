@@ -15,23 +15,39 @@ const WorksGallery = () => {
     getWorksDiego();
   }, []);
   return (
-    <section className='worksGallery'>
-      <h2>Works Diego</h2>
-      <div className='worksContainer'>
+    <section className='pfContainer worksGallery'>
+      <h1>Works Diego</h1>
+      <div className='worksContainerList'>
         {worksDiego.map((workDiego) => (
-          <article className='workContainer'>
-          <img src={workDiego.picture} alt={workDiego.nombre_proyecto}/>
-            <ul className='work'>
-              <li>{workDiego._id}</li>
-              <li>{workDiego.nombre_proyecto}</li>
-              <li>{workDiego.descripcion_breve}</li>
-              <li>{workDiego.descripcion_larga}</li>
-            </ul>
-            <Link
+          <article className='workContainer' key={workDiego._id}>
+            <img src={workDiego.picture} alt={workDiego.nombre_proyecto} />
+            <dl className='work'>
+              <dt>
+                <img src={workDiego.company_picture} alt={workDiego.company} />
+                <h2>{workDiego.nombre_proyecto}</h2>
+              </dt>
+              <dd className='short_description'>
+                {workDiego.descripcion_breve}
+              </dd>
+              <dd className='company'>{workDiego.company}</dd>
+              <dd>{workDiego.descripcion_larga}</dd>
+              <dd className='tech'>
+                <span>Tecnología</span>
+                <ul>
+                  {workDiego.tecnologia.map((item) => (
+                    <li key={item} className={item}>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </dd>
+            </dl>
+            <button
+              className='seeDetail'
               key={workDiego._id}
               to={`/works/${workDiego.nombre_proyecto}`}>
               Ver detalle
-            </Link>
+            </button>
           </article>
         ))}
       </div>
